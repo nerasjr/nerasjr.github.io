@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+Eraldo Neras Gonçalves Júnior
+https://nerasjr.github.io/
+Celular/WhatsApp: (46)99119-1748 (vivo)
+Telefone Fixo: (46)3225-2815
+Skype: nerasjr.
+E-mail: nerasjr@gmail.com
 
-You can use the [editor on GitHub](https://github.com/nerasjr/nerasjr.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nerasjr/nerasjr.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Experiência de mais de 20 anos com linguagem de programação Delphi (desde 1998), versões: 3 a 10.2 (tokyo), programação orientada a objetos e procedural, eventos, criação/uso de DLLs e  BPLs, manipulação de Threads. Vivência com os componentes: DevExpress, ACBR, QuickReport, ReportBuilder, FastReport, Rave, JVCL, RxLib, DBExpress, Zeos, IB, IBO, DBExpress, Firedac, TCP Client/Server, entre outros. Client Rest com IdHttp/RestClient/EndPoint. Aplicativos para multiplataformas com Firemonkey. Firedac, Data Snap, Herança, migração entre diferentes versões e criação de componentes;
+Experiência com linguagem de programação PHP desde o ano de 2005; versões. 3 a 7. Utilização de “frameworks” baseados em MVC: Codeigniter (o que mais utilizo) e Laravel;
+Desenvolvimento de plugins, temas personalizados e API RestFul de integração para: Opencart,  Wordpress, Magento e PrestaShop;
+Desenvolvimento de servidor de API RestFul com linguagens: PHP (codeigniter), Java (Spring MVC), NodeJs e Python (Django);
+Desenvolvimento de aplicativos móveis simples com plugin do Xamarin no Visual Studio em linguagem C#;
+Banco de dados: SQL (Oracle/PL-SQl, Firebird, SQL Server, MySql, SQLite e PostGreSQL): Otimização de consultas, modelagem, constrains de PK e FK, triggers, scripts, packages, stored procedures.
+Cadastros, Compras, Estoque, Ordem de Serviço, Orçamentos (produtos e serviços), Pedidos (produtos e serviços), Controle de Caixa, Contas a pagar, Contas a receber, cobrança bancária com remessa e retorno para vários bancos, Fiscal, R.H., Contabilidade e Agronegócio (silos);
+Desenvolvimento e manutenção de sistema para venda varejo com emissão de cupom fiscal, homologação PAF-ECF, NF-e, NFC-e e TEF (SITEF e Scope);
+Implementação de rotina para emissão de NFS-e (Boanota) para empresas na cidade de Curitiba-PR com utilização de certificado A1;
+Criação e manutenção de rotinas para Integração com diferentes gateways de pagamento: F2B, MOIP, PagSeguro e PayPal.
+Medotologias ágeis: Rotinas pertinentes ao SCRUM como Pesagem, Estimativa, Sprint, Cerimônia e Retrospectiva. Rotinas pertinentes ao KANBAM (fluxo contínuo), wipi, utilização de quadro físico e digital (Jira);
+Versionamento GIT e SVN;
