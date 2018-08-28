@@ -1,5 +1,7 @@
 Eraldo Neras Gonçalves Júnior
 
+Obs: Estou reformulando o meu site pessoal para uma landing-page, volte dentro de alguns dias (previsão para: 31/08/2018)
+
 Celular/WhatsApp: (46)99119-1748 (vivo)
 
 Skype: nerasjr.
