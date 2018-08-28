@@ -1,5 +1,5 @@
 Eraldo Neras Gonçalves Júnior
-https://nerasjr.github.io/
+
 Celular/WhatsApp: (46)99119-1748 (vivo)
 Telefone Fixo: (46)3225-2815
 Skype: nerasjr.
