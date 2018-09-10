@@ -44,6 +44,8 @@
     </div>
 </div>
 
+<div class="overlay"></div>
+
 <!-- Top Bar -->
 <nav class="navbar p-l-5 p-r-5">
     <ul class="nav navbar-nav navbar-left">
@@ -53,13 +55,14 @@
                 <a class="navbar-brand" href="index.html"><span class="m-l-10">Eraldo Jr</span></a>
             </div>
         </li>
+        <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a></li>
         <li>
             <button class="btn btn-warning" onclick=" window.open('https://docs.google.com/document/d/1wkZeOevaTm9ll6zR_hYnRBQnidgvaujp9mdfPA2LOek/edit?usp=sharing','_blank')">
             	Acessar Currículo Completo - GDocs
            	</button>
         </li>
         <li><span class="skype-button rounded" data-contact-id="nerasjr" data-text="Entre em contato"></span></li>
-        <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a></li>
+        
         <li class="float-right">
             <a href="javascript:void(0);" class="fullscreen hidden-sm-down" data-provide="fullscreen" data-close="true"><i class="zmdi zmdi-fullscreen"></i></a>
         </li>
@@ -90,6 +93,9 @@
                             <a title="twitter" href="https://twitter.com/nerasjr" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
                             <a title="skype" href="skype:nerasjr?Chat"><i class="zmdi zmdi-skype"></i>
                             <a title="whatsapp" href="https://api.whatsapp.com/send?phone=5521993199145" target="_blank"><i class="zmdi zmdi-whatsapp"></i></a>
+                            <a title="GitHub" href="https://github.com/nerasjr" target="_blank"><i class="zmdi zmdi-github"></i></a>
+                            <a title="Google+" href="https://plus.google.com/u/0/+EraldoJr" target="_blank"><i class="zmdi zmdi-google-plus"></i></a>
+                            
                                                         
                         </div>
                     </li>
@@ -97,19 +103,18 @@
                     
                     <li class="active open"> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-home"></i><span>Início</span></a>
                         <ul class="ml-menu">
-                            <li class="active"><a href="index.html">Minha História</a> </li>
+                            <li class="active"><a  id="menuhome" href="#">Minha História</a> </li>
                         </ul>
                     </li>
                     
-                    <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-home"></i><span>Desenvolvimento</span></a>
+                    <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-code"></i><span>Desenvolvimento</span></a>
                         <ul class="ml-menu">
-                            <li><a href="#">Delphi</a> </li>
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">Java</a></li>
+                            <li><a id="menudelphi" href="#">Delphi</a> </li>
+                            
                         </ul>
                     </li>
                     
-                    <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>Banco de Dados</span> </a>
+                    <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-hd"></i><span>Banco de Dados</span> </a>
                         <ul class="ml-menu">
                             <li><a href="#">SQL</a></li>
                         </ul>
@@ -133,7 +138,8 @@
                             <a title="twitter" href="https://twitter.com/nerasjr" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
                             <a title="skype" href="skype:nerasjr?Chat"><i class="zmdi zmdi-skype"></i>
                             <a title="whatsapp" href="https://api.whatsapp.com/send?phone=5521993199145" target="_blank"><i class="zmdi zmdi-whatsapp"></i></a>
-                                                        
+                            <a title="GitHub" href="https://github.com/nerasjr" target="_blank"><i class="zmdi zmdi-github"></i></a>
+                            <a title="Google+" href="https://plus.google.com/u/0/+EraldoJr" target="_blank"><i class="zmdi zmdi-google-plus"></i></a>
                         </div>
                     </li>
                 
@@ -207,7 +213,7 @@
                 </h2>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12">                
-                <button class="btn btn-white btn-icon btn-round hidden-sm-down float-right m-l-10" type="button">
+                <button class="btn btn-white btn-icon btn-round hidden-sm-down float-right m-l-10" type="button" id="bookmarkme">
                     <i class="zmdi zmdi-plus"></i>
                 </button>
                 <ul class="breadcrumb float-md-right">
@@ -219,10 +225,9 @@
     <div class="container-fluid">
         <div class="row clearfix">
             <div class="col-lg-12">
-                <div class="card" style="min-height: 1500px;">
+                <div class="card" style="min-height: 500px;">
                     <div class="body">
-                        <h4>Página Inicial</h4>
-                        
+                    	<div id="conteudo"></div>
                     </div>
                 </div>
             </div>
@@ -233,5 +238,56 @@
 <script src="assets/js/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="assets/js/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="assets/js/mainscripts.bundle.js"></script>
+<script type="text/javascript">
+$("#bookmarkme").click(function () {
+  var url = 'http://' + location.host; // i'm in a sub-page and bookmarking the home page
+  var name = "Snir's Homepage";
+
+  if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1){ //chrome
+    alert("Para adicionar esta página ao seus favoritos, pressione as teclas: " 
+        + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 
+            'Command/Cmd' : 'CTRL') + "+D.")
+  } 
+  else if (window.sidebar) { // Mozilla Firefox Bookmark
+    //important for firefox to add bookmarks - remember to check out the checkbox on the popup
+    $(this).attr('rel', 'sidebar');
+    //set the appropriate attributes
+    $(this).attr('href', url);
+    $(this).attr('title', name);
+
+    //add bookmark:
+    //  window.sidebar.addPanel(name, url, '');
+    //  window.sidebar.addPanel(url, name, '');
+    window.sidebar.addPanel('', '', '');
+  } 
+  else if (window.external) { // IE Favorite
+        window.external.addFavorite(url, name);
+  } 
+  return;
+});
+
+if($('#conteudo').html() == "") {
+	$("#conteudo").load("includes/home.html");
+}
+
+$("li").click(function(){
+	  if (!$(this).hasClass("active")) {
+	    $("li.active").removeClass("active");
+	    $(this).addClass("active");
+	  }
+});
+$("#menuhome").on("click",function(){
+    $("#conteudo").load("includes/home.html");
+});
+
+$("#menudelphi").on("click",function(){
+	$(".page-loader-wrapper").fadeIn();
+    $("#conteudo").load("includes/delphi.html");
+    $(".page-loader-wrapper").fadeOut();
+});
+
+</script>
+
+
 </body>
 </html>
